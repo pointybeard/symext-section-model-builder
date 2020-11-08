@@ -1,0 +1,39 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{NAMESPACE}};
+
+use pointybeard\Symphony\Extensions\LaunchTabletop;
+use pointybeard\Symphony\Classmapper;
+
+final class {{CLASSNAME}} extends Classmapper\AbstractModel implements Classmapper\Interfaces\FilterableModelInterface, Classmapper\Interfaces\SortableModelInterface
+{
+    use Classmapper\Traits\HasModelTrait;
+    use Classmapper\Traits\HasFilterableModelTrait;
+    use Classmapper\Traits\HasSortableModelTrait;
+
+    public function getSectionHandle(): string
+    {
+        return '{{SECTION}}';
+    }
+
+    protected static function getCustomFieldMapping(): array
+    {
+        return [
+            /*
+                Possible flags:
+                FLAG_ARRAY
+                FLAG_BOOL
+                FLAG_FILE
+                FLAG_INT
+                FLAG_STR
+                FLAG_FLOAT
+                FLAG_CURRENCY
+                FLAG_NULL
+                FLAG_REQUIRED
+            */
+            {{CUSTOM_FIELD_MAPPINGS}}
+        ];
+    }
+}
