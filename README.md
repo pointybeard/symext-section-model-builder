@@ -1,17 +1,11 @@
 # Section Model Builder for Symphony CMS
 
-[[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/badges/build.png?b=master)](https://scrutinizer-ci.com/g/pointybeard/symext_SectionModelBuilder/build-status/master)
-
-An for [Symphony CMS][ext-Symphony CMS] that allows developers to build Classmapper Model files for sections from the command line.
+An extension for [Symphony CMS][ext-Symphony CMS] that allows developers to build Classmapper Model files for sections from the command line.
 
 -   [Installation](#installation)
+-   [Requirements](#dependencies)
+-   [Dependencies](#dependencies)
 -   [Basic Usage](#basic-usage)
--   [About](#about)
-    -   [Requirements](#dependencies)
-    -   [Dependencies](#dependencies)
--   [Documentation](#documentation)
 -   [Support](#support)
 -   [Contributing](#contributing)
 -   [License](#license)
@@ -43,27 +37,23 @@ After finishing the steps above, enable "Section Model Builder" though the admin
 2. Run the following command to rebuild your Extensions
 
 ```bash
-$ bin/orchestra \
+$ bin/orchestra build \
+    --skip-import-sections \
+    --database-skip-import-data \
+    --database-skip-import-structure \
     --skip-create-author \
     --skip-skip-seeders \
     --skip-git-reset \
+    --skip-composer \
     --skip-postbuild
 ```
 
-## Basic Usage
-
-@todo
-
-## About
-
-@todo
-
-### Requirements
+# Requirements
 
 - This extension works with PHP 7.4 or above.
 - The [Console Extension for Symphony CMS][req-console] must also be installed.
 
-### Dependencies
+# Dependencies
 
 This extension depends on the following Composer libraries:
 
@@ -72,9 +62,13 @@ This extension depends on the following Composer libraries:
 -   [Symphony CMS: Extended Base Class Library][dep-symphony-extended]
 -   [Symphony CMS: Section Builder][dep-section-builder]
 
-## Documentation
+## Usage
 
-Read the [full documentation here][ext-docs].
+This extension provides a new command called "create". Use it via the Symphony Console like so:
+
+    symphony -t cba17882 sectionmodelbuilder create --help
+
+For more information on installing and using commands with the [Console Extension for Symphony CMS][req-console], see <https://github.com/pointybeard/console/blob/master/README.md>
 
 ## Support
 
