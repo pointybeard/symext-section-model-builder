@@ -2,7 +2,3 @@ vendor/
 .DS_Store
 .php_cs.cache
 commands/
-content/
-data-sources/
-events/
-fields/
