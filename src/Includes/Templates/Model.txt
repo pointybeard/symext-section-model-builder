@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace {{NAMESPACE}};
+{{NAMESPACE}}
 
 use pointybeard\Symphony\Extensions\LaunchTabletop;
 use pointybeard\Symphony\Classmapper;
@@ -15,7 +15,7 @@ use pointybeard\Symphony\Classmapper;
     https://github.com/pointybeard/symphony-classmapper/blob/master/README.md
 */
 
-final class {{CLASSNAME}} extends Classmapper\AbstractModel implements Classmapper\Interfaces\FilterableModelInterface, Classmapper\Interfaces\SortableModelInterface
+final class {{CLASS_NAME}} extends Classmapper\AbstractModel implements Classmapper\Interfaces\FilterableModelInterface, Classmapper\Interfaces\SortableModelInterface
 {
     use Classmapper\Traits\HasModelTrait;
     use Classmapper\Traits\HasFilterableModelTrait;
