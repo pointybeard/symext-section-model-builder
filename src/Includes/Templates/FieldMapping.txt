@@ -1,0 +1,7 @@
+
+            // {{FIELD_ID}}: {{FIELD_NAME}} ({{FIELD_TYPE}})
+            '{{ELEMENT_NAME}}' => [
+                //'databaseFieldName' => '{{DATABASE_FIELD_NAMES}}',
+                'classMemberName' => '{{MEMBER_NAME}}',
+                'flags' => null,
+            ],
