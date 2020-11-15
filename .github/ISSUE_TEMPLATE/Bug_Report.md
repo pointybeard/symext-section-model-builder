@@ -4,7 +4,7 @@ about: Create a bug report
 labels: bug
 ---
 
-STOP! Your bug may have already been reported. Please search on the [issue tracker](https://github.com/pointybeard/symext_SectionModelBuilder/issues) before creating a new one.
+STOP! Your bug may have already been reported. Please search on the [issue tracker](https://github.com/pointybeard/symext-section-model-builder/issues) before creating a new one.
 
 ## Expected Behavior
 

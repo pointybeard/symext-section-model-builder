@@ -1,7 +1,7 @@
 {
-    "name": "pointybeard/symext_section-model-builder",
-    "description": "",
-    "homepage": "https://github.com/pointybeard/symext_SectionModelBuilder",
+    "name": "pointybeard/symext-section-model-builder",
+    "description": "An extension for Symphony CMS that allows developers to build Classmapper Model files for sections from the command line.",
+    "homepage": "https://github.com/pointybeard/symext-section-model-builder",
     "license": "MIT",
     "minimum-stability": "stable",
     "keywords": [
@@ -21,18 +21,17 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/pointybeard/symext_SectionModelBuilder/issues"
+        "issues": "https://github.com/pointybeard/symext-section-model-builder/issues"
     },
     "require": {
         "php": ">=7.4",
-        "monolog/monolog": "^2.0",
-        "pointybeard/helpers": "~1.2.0",
-        "pointybeard/symphony-extended": "~1.0",
-        "pointybeard/symphony-classmapper": "~2.0",
-        "pointybeard/symphony-section-builder": "~0.2.0"
+        "pointybeard/helpers": "^1.2.0",
+        "pointybeard/symphony-extended": "^1.0",
+        "pointybeard/symphony-classmapper": "^2.0",
+        "pointybeard/symphony-section-builder": "^0.2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0",
+        "phpunit/phpunit": "^8.0",
         "squizlabs/php_codesniffer": "3.*",
         "friendsofphp/php-cs-fixer": "^2.16",
         "php-mock/php-mock-prophecy": "^0.0.2",
@@ -50,13 +49,14 @@
         }
     },
     "scripts": {
+        "post-update-cmd": "mkdir -p commands",
         "tidy": "php-cs-fixer fix --config=.php_cs.dist -v --using-cache=no",
         "tidyDry": "@tidy --dry-run",
         "test": [
             "parallel-lint . --exclude vendor",
             "phpunit"
         ],
-        "clean": "rm -rf commands content data-sources events fields vendor"
+        "clean": "rm -rf commands"
     },
     "config": {
         "sort-packages": true,

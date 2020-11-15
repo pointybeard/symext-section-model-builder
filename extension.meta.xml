@@ -2,7 +2,7 @@
 <extension id="sectionmodelbuilder" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
     <name>Section Model Builder</name>
     <description></description>
-    <repo type="github">https://github.com/pointybeard/symext_SectionModelBuilder</repo>
+    <repo type="github">https://github.com/pointybeard/symext-section-model-builder</repo>
     <types>
         <type>Utility</type>
         <type>Workflow</type>

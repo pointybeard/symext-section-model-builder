@@ -16,7 +16,7 @@ Clone the latest version to your `/extensions` folder and run composer to instal
 
 ### Manually (git + composer)
 ```bash
-$ git clone https://github.com/pointybeard/symext_SectionModelBuilder.git sectionmodelbuilder
+$ git clone https://github.com/pointybeard/symext-section-model-builder.git sectionmodelbuilder
 $ composer update -vv --profile -d ./sectionmodelbuilder
 ```
 After finishing the steps above, enable "Section Model Builder" though the administration interface or, if using [Orchestra][ext-Orchestra], with `bin/extension enable sectionmodelbuilder`.
@@ -29,7 +29,7 @@ After finishing the steps above, enable "Section Model Builder" though the admin
 {
     "name": "sectionmodelbuilder",
     "repository": {
-        "url": "https://github.com/pointybeard/symext_SectionModelBuilder.git"
+        "url": "https://github.com/pointybeard/symext-section-model-builder.git"
     }
 }
 ```
@@ -86,15 +86,15 @@ We encourage you to contribute to this project. Please check out the [Contributi
 ## License
 "Section Model Builder for Symphony CMS" is released under the MIT License. See [LICENCE][doc-LICENCE] for details.
 
-[doc-CONTRIBUTING]: https://github.com/pointybeard/symext_SectionModelBuilder/blob/master/CONTRIBUTING.md
+[doc-CONTRIBUTING]: https://github.com/pointybeard/symext-section-model-builder/blob/master/CONTRIBUTING.md
 [doc-LICENCE]: http://www.opensource.org/licenses/MIT
 [req-console]: https://github.com/pointybeard/console
 [dep-helpers]: https://github.com/pointybeard/helpers
 [dep-classmapper]: https://github.com/pointybeard/symphony-classmapper
 [dep-symphony-extended]: https://github.com/pointybeard/symphony-extended
 [dep-section-builder]: https://github.com/pointybeard/symphony-section-builder
-[ext-issues]: https://github.com/pointybeard/symext_SectionModelBuilder/issues
+[ext-issues]: https://github.com/pointybeard/symext-section-model-builder/issues
 [ext-Symphony CMS]: http://getsymphony.com
 [ext-Orchestra]: https://github.com/pointybeard/orchestra
-[ext-contributor]: https://github.com/pointybeard/symext_SectionModelBuilder/contributors
-[ext-docs]: https://github.com/pointybeard/symext_SectionModelBuilder/blob/master/.docs/toc.md
+[ext-contributor]: https://github.com/pointybeard/symext-section-model-builder/contributors
+[ext-docs]: https://github.com/pointybeard/symext-section-model-builder/blob/master/.docs/toc.md

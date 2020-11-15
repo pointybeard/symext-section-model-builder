@@ -1,9 +1,9 @@
 {
     "id": "sectionmodelbuilder",
     "name": "Section Model Builder",
-    "description": "",
-    "repo": "https://github.com/pointybeard/symext_SectionModelBuilder.git",
-    "homepage": "https://github.com/pointybeard/symext_SectionModelBuilder",
+    "description": "An extension allows developers to build Classmapper Model files for sections from the command line.",
+    "repo": "https://github.com/pointybeard/symext-section-model-builder.git",
+    "homepage": "https://github.com/pointybeard/symext-section-model-builder",
     "type": [
         "Utility",
         "Workflow"
