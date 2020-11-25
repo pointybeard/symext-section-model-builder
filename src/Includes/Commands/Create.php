@@ -7,6 +7,7 @@ namespace pointybeard\Symphony\Extensions\Console\Commands\SectionModelBuilder;
 use Extension_SectionModelBuilder;
 use pointybeard\Symphony\Extensions\Console;
 use pointybeard\Helpers\Cli\Input;
+use pointybeard\Helpers\Cli\Message;
 use pointybeard\Helpers\Cli\Colour\Colour;
 use pointybeard\Symphony\Extensions\SectionModelBuilder;
 use pointybeard\Helpers\Foundation\BroadcastAndListen;
@@ -168,7 +169,7 @@ class Create extends Console\AbstractCommand implements Console\Interfaces\Authe
             $this->broadcast(
                 Symphony::BROADCAST_MESSAGE,
                 E_NOTICE,
-                (new Cli\Message\Message())
+                (new Message\Message())
                     ->message(filesize($input->find('output')).' bytes written to '.$input->find('output'))
                     ->foreground(Colour::FG_GREEN)
             );
